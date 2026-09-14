@@ -1708,6 +1708,311 @@ body {
     transform: translate(2px, -2px);
 }
 
+
+.projects-page {
+    background-color: #f9f6f3;
+    min-height: 100vh;
+}
+
+/* PAGE HEADER */
+
+.projects-header {
+    width: min(90%, 1100px);
+    margin: 0 auto;
+    padding: 100px 0 70px;
+}
+
+.projects-eyebrow {
+    color: #d96c27;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 14px;
+}
+
+.projects-header h1 {
+    color: #13294B;
+    font-size: clamp(3rem, 7vw, 5rem);
+    margin: 0 0 20px;
+}
+
+.projects-intro {
+    max-width: 650px;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #555;
+}
+
+
+/* FEATURED PROJECT */
+
+.featured-project {
+    width: min(90%, 1100px);
+    margin: 0 auto 120px;
+
+    background-color: white;
+
+    border-radius: 24px;
+
+    padding: 60px;
+
+    position: relative;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.08);
+
+    overflow: hidden;
+}
+
+
+/* LARGE PROJECT NUMBER */
+
+.project-number {
+    position: absolute;
+
+    right: 35px;
+    top: 15px;
+
+    font-size: 8rem;
+    font-weight: 800;
+
+    color: rgba(19, 41, 75, 0.05);
+
+    line-height: 1;
+}
+
+
+/* HEADING */
+
+.project-label {
+    color: #d96c27;
+
+    font-size: 0.75rem;
+
+    letter-spacing: 2px;
+
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+.project-heading h2 {
+    color: #13294B;
+
+    font-size: clamp(2rem, 4vw, 3rem);
+
+    margin: 0 0 24px;
+
+    max-width: 750px;
+}
+
+
+/* DESCRIPTION */
+
+.project-description {
+    max-width: 850px;
+
+    font-size: 1.08rem;
+
+    line-height: 1.8;
+
+    color: #444;
+}
+
+
+/* METHODS */
+
+.project-methods {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 30px;
+}
+
+.project-methods span {
+    background-color: #eef2f7;
+
+    color: #13294B;
+
+    font-size: 0.85rem;
+
+    font-weight: 600;
+
+    padding: 9px 14px;
+
+    border-radius: 100px;
+}
+
+
+/* DIVIDER */
+
+.project-divider {
+    height: 1px;
+
+    background-color: #ddd;
+
+    margin: 50px 0;
+}
+
+
+/* DETAILS */
+
+.project-details-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 50px;
+}
+
+.project-detail h3 {
+    color: #13294B;
+
+    font-size: 1.35rem;
+
+    margin-bottom: 12px;
+}
+
+.project-detail p {
+    line-height: 1.75;
+
+    color: #555;
+}
+
+
+/* KEY RESULT */
+
+.project-result {
+    margin-top: 55px;
+
+    background-color: #13294B;
+
+    color: white;
+
+    padding: 40px;
+
+    border-radius: 18px;
+}
+
+.result-label {
+    color: #f28c28;
+
+    font-size: 0.75rem;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 12px;
+}
+
+.project-result h3 {
+    font-size: 1.65rem;
+
+    margin: 0 0 16px;
+
+    max-width: 800px;
+}
+
+.project-result p {
+    line-height: 1.7;
+
+    color: #e3e8ef;
+
+    max-width: 850px;
+}
+
+
+/* WORKFLOW */
+
+.project-workflow {
+    margin-top: 60px;
+}
+
+.project-workflow > h3 {
+    color: #13294B;
+
+    font-size: 1.7rem;
+
+    margin-bottom: 28px;
+}
+
+.workflow-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+.workflow-step {
+    border-top: 3px solid #d96c27;
+
+    padding-top: 18px;
+}
+
+.workflow-step span {
+    font-size: 0.8rem;
+
+    font-weight: 700;
+
+    color: #d96c27;
+}
+
+.workflow-step h4 {
+    color: #13294B;
+
+    font-size: 1.1rem;
+
+    margin: 10px 0;
+}
+
+.workflow-step p {
+    color: #555;
+
+    line-height: 1.6;
+
+    font-size: 0.92rem;
+}
+
+
+/* PROJECT LINKS */
+
+.project-links {
+    margin-top: 50px;
+}
+
+.project-button {
+    display: inline-block;
+
+    text-decoration: none;
+
+    background-color: #d96c27;
+
+    color: white;
+
+    font-weight: 700;
+
+    padding: 14px 24px;
+
+    border-radius: 8px;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.project-button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
 /* RESPONSIVE */
 
 @media (max-width: 800px) {
@@ -1894,10 +2199,35 @@ body {
     .contact-link-card {
         min-height: 200px;
     }
+
+    .projects-header {
+        padding-top: 70px;
+    }
+
+    .featured-project {
+        padding: 35px 25px;
+    }
+
+    .project-number {
+        font-size: 5rem;
+    }
+
+    .project-details-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .workflow-grid {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media (max-width: 500px) {
     .movies-grid {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .workflow-grid {
+        grid-template-columns: 1fr;
     }
 }
